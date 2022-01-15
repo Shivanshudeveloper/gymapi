@@ -15,7 +15,7 @@ app.use(cors());
 app.use("/", userRoutes);
 
 const PORT = process.env.PORT || 5000;
-const DB = process.env.DATABASE;
+const DB = "mongodb+srv://shivanshu:shivanshu@1234@cluster0.t9gqi.mongodb.net/workdbdata?retryWrites=true&w=majority";
 
 mongoose
   .connect(
