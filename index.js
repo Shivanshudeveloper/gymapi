@@ -15,11 +15,11 @@ app.use(cors());
 app.use("/", userRoutes);
 
 const PORT = process.env.PORT || 5000;
-const DB = "mongodb+srv://shivanshu:shivanshu@1234@cluster0.t9gqi.mongodb.net/workdbdata?retryWrites=true&w=majority";
+const DB = process.env.DATABASE;
 
 mongoose
   .connect(
-    DB,
+    "mongodb+srv://demo:i9wHM9QyktbdXpQ@cluster0.z7gcj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
