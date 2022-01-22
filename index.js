@@ -15,7 +15,7 @@ app.use(cors());
 app.use("/", userRoutes);
 
 const PORT = process.env.PORT || 5000;
-const DB = process.env.DATABASE;
+// const DB = process.env.DATABASE;
 
 mongoose
   .connect(
