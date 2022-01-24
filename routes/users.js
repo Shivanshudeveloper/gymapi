@@ -6,7 +6,7 @@ import Staff from "../models/staff.js";
 import classSchedule from "../models/classSchedule.js";
 import Product from "../models/products.js";
 
-router.get("/", () => {
+router.get("/", (req, res) => {
   res.send("test");
 });
 
